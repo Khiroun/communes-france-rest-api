@@ -47,7 +47,7 @@ app.post("/communes", (req, res) => {
       res.json(err);
     });
 });
-app.listen(5000);
+app.listen(process.env.PORT || 3000);
 /**
  * 
  mongodb+srv://admin:nfcWB5uhhPjn_5n@communesfrance.qqqxq.mongodb.net/test
