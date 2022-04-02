@@ -1,9 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const Commune = require("./models/Communes");
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 
 //Routes
